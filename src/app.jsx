@@ -17,30 +17,67 @@ import './app.scss'
 const store = configStore()
 
 class App extends Component {
-
   config = {
     pages: [
+      'pages/home/index',
+      'pages/course/index',
+      'pages/study/index',
+      'pages/my/index',
+      'pages/phone-login/index',
+      'pages/login/index',
       'pages/index/index'
     ],
     window: {
-      backgroundTextStyle: 'light',
+      backgroundTextStyle: 'dark',
       navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
+      navigationBarTitleText: '蘑菇在线',
       navigationBarTextStyle: 'black'
+    },
+    tabBar: {
+      color: '#999',
+      backgroundColor: '#fff',
+      selectedColor: '#ff9a29',
+      borderStyle: 'white',
+      list: [
+        {
+          pagePath: 'pages/home/index',
+          text: '首页',
+          iconPath: 'assets/tabs/icon_home@2x.png',
+          selectedIconPath: 'assets/tabs/icon_home_selected@2x.png'
+        },
+        {
+          pagePath: 'pages/course/index',
+          text: '课程',
+          iconPath: 'assets/tabs/icon_course@2x.png',
+          selectedIconPath: 'assets/tabs/icon_course_selected@2x.png'
+        },
+        {
+          pagePath: 'pages/study/index',
+          text: '学习',
+          iconPath: 'assets/tabs/icon_study@2x.png',
+          selectedIconPath: 'assets/tabs/icon_study_selected@2x.png'
+        },
+        {
+          pagePath: 'pages/my/index',
+          text: '我的',
+          iconPath: 'assets/tabs/icon_my@2x.png',
+          selectedIconPath: 'assets/tabs/icon_my_selected@2x.png'
+        }
+      ]
     }
   }
 
-  componentDidMount () {}
+  componentDidMount() {}
 
-  componentDidShow () {}
+  componentDidShow() {}
 
-  componentDidHide () {}
+  componentDidHide() {}
 
-  componentDidCatchError () {}
+  componentDidCatchError() {}
 
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数
-  render () {
+  render() {
     return (
       <Provider store={store}>
         <Index />

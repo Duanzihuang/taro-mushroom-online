@@ -2,7 +2,7 @@
   "miniprogramRoot": "./dist",
   "projectname": "taro-mushroom-online",
   "description": "使用Taro开发的蘑菇在线项目",
-  "appid": "touristappid",
+  "appid": "wxffa46fb8f2f7071d",
   "setting": {
     "urlCheck": true,
     "es6": false,
