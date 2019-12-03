@@ -19,12 +19,12 @@ const store = configStore()
 class App extends Component {
   config = {
     pages: [
+      'pages/phone-login/index',
+      'pages/login/index',
       'pages/home/index',
       'pages/course/index',
       'pages/study/index',
       'pages/my/index',
-      'pages/phone-login/index',
-      'pages/login/index',
       'pages/index/index'
     ],
     window: {
