@@ -1,14 +1,14 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Input, Image } from '@tarojs/components'
 
+// 导入图片等静态资源
+import phoneLoginImage from '../../assets/images/phone_login@2x.png'
+
 import './index.scss'
 
 import { fetch } from '../../utils/request'
 import { GET_VCODE, PHONE_LOGIN } from '../../constants/api'
 import { setToken } from '../../utils/token'
-
-// 导入图片等静态资源
-import phoneLogin from '../../assets/images/phone_login@2x.png'
 
 class PhoneLogin extends Component {
   state = {
@@ -129,12 +129,7 @@ class PhoneLogin extends Component {
           />
         </View>
         <View className="phone-login" onClick={this.phoneLogin}>
-          {/* <Image
-            className="img"
-            src={phoneLogin}
-            alt=""
-          /> */}
-          <Text>登录</Text>
+          <Image src={phoneLoginImage} className="img" alt="" />
         </View>
       </View>
     )
