@@ -8,3 +8,12 @@ export const PHONE_LOGIN = 'user/login'
 export const GET_SWIPERS = 'home/swipers'
 export const GET_RECOMMEND_COURSE = 'home/course'
 export const GET_HOT_VIDEO = 'home/video'
+
+// 学习进度
+export const GET_STUDY_PROGRESS = 'study/progress'
+
+// 课程相关
+export const GET_COURSE_LIST = 'course/list'
+
+// 我的页面
+export const GET_MY_INFO = 'my/info'
