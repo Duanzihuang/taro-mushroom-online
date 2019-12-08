@@ -6,6 +6,9 @@ import Index from './pages/index'
 
 import configStore from './store'
 
+// 导入字体图标
+import './assets/styles/fonts/iconfont.css'
+
 import './app.scss'
 
 // 如果需要在 h5 环境中开启 React Devtools
@@ -26,7 +29,8 @@ class App extends Component {
       'pages/index/index',
       'pages/phone-login/index',
       'pages/login/index',
-      'pages/course-detail/index'
+      'pages/course-detail/index',
+      'pages/search/index'
     ],
     window: {
       backgroundTextStyle: 'dark',

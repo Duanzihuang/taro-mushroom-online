@@ -14,6 +14,9 @@ import {
 // 导入相关图片
 import arrowImage from '../../assets/images/arrow@2x.png'
 
+// 导入子组件
+import SearchBar from '../../components/SearchBar'
+
 class Home extends Component {
   constructor() {
     super()
@@ -175,6 +178,8 @@ class Home extends Component {
     const { swipers, courses, videos } = this.state
     return (
       <View className="home-container">
+        {/* 搜索框 */}
+        <SearchBar placeholder="请输入课程的名称" />
         {/* 轮播图 */}
         {swipers.length > 0 && this.renderSwipers()}
         {/* 推荐课程 */}

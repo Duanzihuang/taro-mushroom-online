@@ -9,6 +9,9 @@ export const GET_SWIPERS = 'home/swipers'
 export const GET_RECOMMEND_COURSE = 'home/course'
 export const GET_HOT_VIDEO = 'home/video'
 
+// 搜索相关
+export const SEARCH_COURSE = 'course/search'
+
 // 学习进度
 export const GET_STUDY_PROGRESS = 'study/progress'
 
